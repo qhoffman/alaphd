@@ -25,13 +25,58 @@
             align-content:center;
             align-items:center;
         }
+        a {
+            color:black;
+            font-family: Roboto, Ubuntu, Arial;
+            text-decoration:none;
+            font-size:20px;
+        }
+        a:hover {
+            color: #801020;
+            text-decoration:underline;
+
+        }
         #content {
             font-family: Roboto, Ubuntu, Arial;
             font-size: 5vw;
+            background: #efeeec;
+            padding:20px;
+            border:1px solid #ccc;
+            border-radius:3px;
+            box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
+
+        }
+        #topMenu {
+            position: absolute;
+            top:0px;
+            left:0px;
+            right:0px;
+            height:40px;
+            background: #efeeec;
+            display:flex;
+            align-content:center;
+            align-items:center;
+            border-bottom: 1px solid #333;
+            box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
+        }
+        #topMenuContent {
+            margin-left:10px;
+            color:black;
+            font-family: Roboto, Ubuntu, Arial;
+            font-size:20px;
+            width:calc( 100% - 20px);
+            display:flex;
+            justify-content: space-between;
         }
     </style>
     <body class="fullbleed layout vertical">
-        <div id="content"> A Lannister Always Pays His Debts
+        <div id="content"> A Lannister Always Pays His Debts...
+        </div>
+        <div id="topMenu">
+            <div id="topMenuContent">
+                <span>Go To:&nbsp</span>
+                <span><a href="https://ambient.alaphd.com">Ambient App</a></span>
+            </div>
         </div>
     </body>
 </html>
